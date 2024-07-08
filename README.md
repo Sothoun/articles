@@ -4,3 +4,5 @@ npm istall
 Manual Create
 # Start Product 
 npm run start
+# Migration Table
+npx prisma migrate dev

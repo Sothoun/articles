@@ -9,7 +9,7 @@ exports.createArticle = (req, res) => {
         }
         res.status(201).send({
             "status": true,
-            "message": "Book created successfully",
+            "message": "Article created successfully",
         });
     });
 };
@@ -43,7 +43,7 @@ exports.getArticleById = (req, res) => {
 exports.updateArticle = (req, res) => {
     const { id } = req.params;
     const { title, content, created_by, is_published } = req.body;
-    const query = "UPDATE books SET title = ?, author_id = ?, genre = ?, publication_date = ? WHERE id = ?";
+    const query = "UPDATE articles SET title = ?, author_id = ?, genre = ?, publication_date = ? WHERE id = ?";
     connection.query(query, [title, content, created_by, is_published, id], (err, results) => {
         if (err) {
             return res.status(500).send(err);

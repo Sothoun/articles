@@ -7,7 +7,7 @@ const {
   updateUser,
   deleteUser
 } = require("./controllers/userController");
-// book controller 
+// article controller 
 const {
   createArticle, 
   getArticles,
@@ -31,7 +31,7 @@ app.get("/api/users/:id", getSingleUser);
 app.put("/api/users/:id", updateUser);
 app.delete("/api/users/:id", deleteUser);
 
-// book 
+// article 
 app.post("/api/articles", createArticle);
 app.get("/api/articles", getArticles);
 app.get("/api/articles/:id", getArticleById);

@@ -1,5 +1,5 @@
 # Install Node Module
-npm istall
+npm install
 # Create Database
 Manual Create
 # Start Product 
